@@ -82,11 +82,6 @@ export default function Details() {
           viewport={{ once: true, amount: 0.3 }}
         />
       </div>
-
-      {/* <div className="text-center mt-10 text-gray-900 dark:text-white">
-        <div className="w-20 h-0.5 bg-gray-200 dark:bg-gray-700 mx-auto mb-3 rounded" />
-          Come and Join us!
-        </div> */}
     </section>
   );
 }
