@@ -38,10 +38,6 @@ export default function Content () {
           </div>
         </div>
         <div className="mb-20"></div>
-        {/* <div className="mt-8 text-xl text-black dark:text-gray-300 text-center w-full">
-          <div className="font-lora font-bold">참석 여부 확인</div>
-      
-        </div> */}
       </div>
     </section>
   );
