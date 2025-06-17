@@ -8,7 +8,11 @@ export default function Main() {
         backgroundImage: "url('/cake.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundRepeat: "no-repeat"
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed",
+        WebkitBackgroundSize: "cover",
+        WebkitTransform: "translateZ(0)",
+        transform: "translateZ(0)"
       }}
     >
       {/* 배경 오버레이 추가 (텍스트 가독성을 위해) */}
