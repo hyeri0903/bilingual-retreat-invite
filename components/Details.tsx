@@ -16,6 +16,10 @@ export default function Details() {
     }
   };
 
+  const kakaoBankAlert = () =>  {
+    alert('아직 준비중입니다.');
+  }
+
   return (
     <section className="w-full min-h-screen mx-auto flex flex-col bg-gray-50 dark:bg-gray-900">
       <div className="flex justify-center items-center mt-10">
@@ -26,14 +30,15 @@ export default function Details() {
       </div>
       {/* 1부 - 오른쪽 배치 */}
       <div className="flex flex-col md:flex-row">
-        <motion.img 
-            src="/heartcake.jpg" 
-            alt="1부 이미지" 
-            className="w-full md:w-[790px] h-[600px] object-cover"
-            initial={{ x: -200, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0.3 }}
+        <motion.img
+          src="/franko.png"
+          alt="1부 이미지"
+          // className="w-full md:w-[790px] h-[600px] object-cover"
+          className="w-full max-w-[200px] md:max-w-[400px] h-auto object-cover rounded-xl mx-auto md:mx-0 self-center"
+          initial={{ x: -200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
         />
         <div className="flex-1 flex flex-col justify-center items-center p-4 md:p-0">
           <div className="text-center mb-5">
@@ -45,27 +50,29 @@ export default function Details() {
           <div>
             <div className="space-y-1 text-gray-700 dark:text-gray-200 text-center md:text-left">
               <div className="text-gray-700 dark:text-gray-200 text-center mb-6">
-                We're asking for 20,000 won fee to join the bilingual retreat! 
-                <div 
+                We're asking for 20,000 won fee to join the bilingual retreat!
+                <div
                   className="text-gray-700 dark:text-gray-200 text-center mt-5 underline cursor-pointer"
-                  onClick={() => copyToClipboard("3333-0000-1234-5667")}
+                  onClick={() => copyToClipboard("3333323237518")}
                 >
-                카카오뱅크 3333-0000-1234-5667
+                  카카오뱅크 3333-32-3237518
                 </div>
               </div>
-             
+
               <div className="flex justify-center mt-5">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   className="bg-gray-200 hover:bg-yellow-500 text-black font-bold py-3 px-8 text-lg rounded-lg"
+                  onClick={kakaoBankAlert}
                 >
-                  <a
+                   Wire to KakaoBank
+                  {/* <a
                     href={kakaoBankUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Wire to KakaoBank
-                  </a>
+                  </a> */}
                 </motion.button>
               </div>
             </div>
@@ -88,16 +95,16 @@ export default function Details() {
             </div>
           </div>
         </div>
-        <motion.img 
-            src="/flower.jpg" 
-            alt="2부 이미지" 
-            className="w-full md:w-[790px] h-[600px] object-cover order-1 md:order-2"
-            initial={{ x: 200, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0.3 }}
-          />
-        </div>
+        <motion.img
+          src="/harry.png"
+          alt="2부 이미지"
+          className="w-full max-w-[200px] md:max-w-[400px] h-auto object-cover rounded-xl order-1 md:order-2 mx-auto md:mx-0 self-center"
+          initial={{ x: 200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+        />
+      </div>
     </section>
   );
 }

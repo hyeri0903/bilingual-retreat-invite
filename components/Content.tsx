@@ -17,7 +17,7 @@ export default function Content () {
         <div className="flex flex-col items-center justify-center w-full mt-10">
           <div>Join us for the</div>
           <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-black dark:text-white mb-4 text-center w-full">
-            Bilinigual Retreat
+            Bilingual Retreat
           </h2>
           <div {...aosProps} className="mt-8 text-xl text-black dark:text-white text-center w-full">
             <div className="font-bold text-lg">WHEN</div>
@@ -34,7 +34,7 @@ export default function Content () {
           <div {...aosProps} className="mt-8 text-xl text-black dark:text-white text-center w-full">
             <div className="font-bold text-lg">CONTACT</div>
             <p className="text-large text-gray-700 dark:text-white mt-2">
-              010.1234.5678
+              Harry & Franko
             </p>
           </div>
         </div>
