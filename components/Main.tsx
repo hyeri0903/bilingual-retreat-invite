@@ -9,6 +9,7 @@ export default function Main() {
   useEffect(() => {
     const video = videoRef.current;
     if (video) {
+      video.muted = true;
       // 비디오 로딩 완료 후 재생 시도
       const handleCanPlay = () => {
         console.log('비디오 재생 시도 중...');
@@ -54,7 +55,6 @@ export default function Main() {
         onCanPlay={() => console.log('비디오 재생 가능')}
       >
         <source src="/bilingual-background.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
       </video>
 
       {/* 배경 오버레이 추가 (텍스트 가독성을 위해) */}
