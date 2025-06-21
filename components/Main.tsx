@@ -9,9 +9,9 @@ export default function Main() {
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover  max-w-none"
+        className="absolute inset-0 w-full h-full object-cover max-w-none"
       >
-        <source src="/bilingual.MP4" type="video/mp4" />
+        <source src="/bilingual.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
