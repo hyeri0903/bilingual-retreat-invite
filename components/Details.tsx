@@ -34,7 +34,7 @@ export default function Details() {
           src="/franko.png"
           alt="1부 이미지"
           // className="w-full md:w-[790px] h-[600px] object-cover"
-          className="w-full max-w-[200px] md:max-w-[400px] h-auto object-cover rounded-xl"
+          className="w-full max-w-[200px] md:max-w-[400px] h-auto object-cover rounded-xl mx-auto md:mx-0 self-center"
           initial={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -98,7 +98,7 @@ export default function Details() {
         <motion.img
           src="/harry.png"
           alt="2부 이미지"
-          className="w-full max-w-[200px] md:max-w-[400px] h-auto object-cover rounded-xl order-1 md:order-2 ml-auto"
+          className="w-full max-w-[200px] md:max-w-[400px] h-auto object-cover rounded-xl order-1 md:order-2 mx-auto md:mx-0 self-center"
           initial={{ x: 200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
