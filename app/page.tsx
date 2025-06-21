@@ -7,7 +7,7 @@ import Content from "components/Content";
 export default function Page() {
   return (
     <>
-      <div className="flex flex-col min-h-screen bg-white dark:bg-black">
+      <div className="flex flex-col min-h-screen bg-white">
         <Header />
         <main>
           <Main />

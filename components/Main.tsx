@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Main() {
   return (
-    <section className="w-full min-h-screen flex flex-col justify-start items-center pt-10 px-4 bg-white dark:bg-black relative overflow-hidden">
+    <section className="w-full min-h-screen flex flex-col justify-start items-center pt-10 px-4 bg-white relative overflow-hidden">
       {/* 배경 비디오 */}
       <video
         autoPlay

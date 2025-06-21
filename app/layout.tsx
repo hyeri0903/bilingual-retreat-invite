@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ThemeProvider } from "next-themes";
+// import { ThemeProvider } from "next-themes";
 import { Montserrat, Playfair_Display_SC, DM_Serif_Display, Lora } from 'next/font/google'
 
 import "styles/globals.css";
@@ -73,11 +73,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
         />
       </head>
-      <body className="bg-white dark:bg-black min-h-screen">
-        
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+      <body className="bg-white min-h-screen">
+        {/* <ThemeProvider attribute="class" defaultTheme="dark" enableSystem> */}
           {children}
-        </ThemeProvider>
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );
