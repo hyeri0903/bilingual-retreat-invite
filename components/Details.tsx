@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import { IoChatbubblesSharp } from "react-icons/io5";
+import { PiCopy } from "react-icons/pi";
+
 
 export default function Details() {
   // TODO: 이 URL을 실제 카카오뱅크 송금 링크로 교체
@@ -51,13 +53,15 @@ export default function Details() {
           <div>
             <div className="space-y-1 text-gray-700 text-center md:text-left">
               <div className="text-gray-700 text-center mb-6">
-                We're asking for 40,000 won contribution for the Bilingual
+                We're asking for 40,000 won contribution 
+                <span className="sm:hidden"><br /></span>
+                for the Bilingual
                 Retreat!
                 <div
                   className="text-gray-700 text-center mt-5 underline cursor-pointer"
                   onClick={() => copyToClipboard("3333343640786")}
                 >
-                  3333343640786 카카오뱅크 백성현
+                  3333343640786 카카오뱅크 백성현 <PiCopy className="inline ml-1 mb-1" size={20} />
                 </div>
               </div>
 
