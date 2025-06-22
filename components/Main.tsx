@@ -20,9 +20,9 @@ export default function Main() {
 
       {/* 콘텐츠를 오버레이 위에 표시 */}
       <div className="relative z-1 flex flex-col items-center">
-        <div className="font-sans text-2xl text-white">You're invited to</div>
+        <div className="font-sans text-2xl text-white">You're invited to the</div>
         <h1 className="font-sans font-bold tracking-tighter text-6xl sm:text-7xl md:text-8xl lg:text-8xl text-white mb-3 text-center">
-          Bilingual Retreat
+          BILINGUAL RETREAT
         </h1>
         <p className="font-sans text-xl text-white mb-12 font-light">
           Saturday 28th June 2025

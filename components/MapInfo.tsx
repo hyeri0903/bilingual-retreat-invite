@@ -10,7 +10,7 @@ export default function Home() {
     if (!mapContainer || typeof window.naver === 'undefined') return;
 
     const mapOptions = {
-      center: new window.naver.maps.LatLng(37.4979, 127.0276), // 강남역 좌표
+      center: new window.naver.maps.LatLng(37.5171, 127.0184), // 강남역 좌표
       zoom: 16,
       zoomControl: true,
     };
@@ -18,7 +18,7 @@ export default function Home() {
     const map = new window.naver.maps.Map('map', mapOptions);
 
     new window.naver.maps.Marker({
-      position: new window.naver.maps.LatLng(37.4979, 127.0276),
+      position: new window.naver.maps.LatLng(37.5171, 127.0184),
       map,
       title: '강남역',
     });

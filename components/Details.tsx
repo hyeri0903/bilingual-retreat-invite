@@ -1,11 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { IoChatbubblesSharp } from "react-icons/io5";
 
 export default function Details() {
   // TODO: 이 URL을 실제 카카오뱅크 송금 링크로 교체
   const kakaoBankUrl =
     "https://link.kakaobank.com/send/transfer-web?app_if=kakaobank";
+
+  const groupChatUrl = "https://open.kakao.com/o/gF4OncDh";
 
   const copyToClipboard = async (text: string) => {
     try {
@@ -16,9 +19,9 @@ export default function Details() {
     }
   };
 
-  const kakaoBankAlert = () =>  {
-    alert('아직 준비중입니다.');
-  }
+  const kakaoBankAlert = () => {
+    alert("아직 준비중입니다.");
+  };
 
   return (
     <section className="w-full min-h-screen mx-auto flex flex-col bg-gray-50">
@@ -42,20 +45,19 @@ export default function Details() {
         />
         <div className="mt-10 mb-10 flex-1 flex flex-col justify-center items-center p-4 md:p-0">
           <div className="text-center mb-5">
-            <div className="text-xl font-bold text-gray-600">
-              Entry Fee
-            </div>
+            <div className="text-xl font-bold text-gray-600">💸 Price</div>
             <div className="mt-3 w-16 h-0.5 bg-gray-600 rounded mx-auto"></div>
           </div>
           <div>
             <div className="space-y-1 text-gray-700 text-center md:text-left">
               <div className="text-gray-700 text-center mb-6">
-                We're asking for 30,000 won contribution for the bilingual retreat!
+                We're asking for 40,000 won contribution for the Bilingual
+                Retreat!
                 <div
                   className="text-gray-700 text-center mt-5 underline cursor-pointer"
-                  onClick={() => copyToClipboard("3333323237518")}
+                  onClick={() => copyToClipboard("3333343640786")}
                 >
-                  카카오뱅크 3333-32-3237518
+                  3333343640786 카카오뱅크 백성현
                 </div>
               </div>
 
@@ -84,14 +86,30 @@ export default function Details() {
       <div className="flex flex-col md:flex-row">
         <div className="mt-10 mb-10  flex-1 flex flex-col justify-center items-center p-4 md:p-0 order-2 md:order-1">
           <div className="text-center mb-5">
-            <div className="text-xl font-bold text-gray-600">
-              Note
-            </div>
+            <div className="text-xl font-bold text-gray-600">📝 Note</div>
             <div className="mt-3 w-16 h-0.5 bg-gray-600 rounded mx-auto"></div>
           </div>
           <div>
             <div className="space-y-1 text-gray-700 text-center md:text-left">
-              <div>You can leave anytime!</div>
+              <div>
+                Feel free to leave early if needed. <br />
+                Food and beverages will be provided. <br />
+                Please Join this Group Chat for further updates
+                <div className="flex justify-center mt-5">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    className="bg-gray-200 hover:bg-yellow-500 text-black font-bold py-3 px-8 text-lg rounded-lg"
+                  >
+                    <a
+                      href={groupChatUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Bilingual Retreat Group Chat <IoChatbubblesSharp className="inline ml-2 mb-1" size={22} />
+                    </a>
+                  </motion.button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
