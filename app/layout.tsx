@@ -33,14 +33,14 @@ const lora = Lora({
 
 
 export const metadata: Metadata = {
-  title: "Welcome To Bilingual Retreat!🎈",
-  description: "You're invited to our unforgettable retreat!",
+  title: "Bilingual Retreat🎈",
+  description: "You're invited to the unforgettable retreat!",
   icons: {
     icon: 'invitation.png'
   },
   openGraph: {
-    title: "Welcome To Bilingual Retreat🎈",
-    description: "You're invited to our unforgettable retreat!",
+    title: "Bilingual Retreat🎈",
+    description: "You're invited to the unforgettable retreat!",
     url: "https://bilingual-retreat-invite.vercel.app/",
     siteName: "Mobile Invitation",
     images: [
@@ -55,8 +55,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Welcome To Bilingual Retreat🎈",
-    description: "You're invited to our unforgettable retreat!",
+    title: "Bilingual Retreat🎈",
+    description: "You're invited to the unforgettable retreat!",
     images: ["https://bilingual-retreat-invite.vercel.app/invitation.png"],
   },
 };
