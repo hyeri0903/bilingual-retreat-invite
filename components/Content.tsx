@@ -21,6 +21,7 @@ export default function Content () {
           </h2>
           <div
             {...aosProps}
+            data-aos-delay="0"
             className="mt-8 text-xl text-black text-center w-full"
           >
             <div className="font-bold text-lg">WHEN</div>
@@ -36,6 +37,7 @@ export default function Content () {
           </div>
           <div
             {...aosProps}
+            data-aos-delay="200"
             className="mt-8 text-xl text-black text-center w-full"
           >
             <div className="font-bold text-lg">WHERE</div>
@@ -48,10 +50,15 @@ export default function Content () {
           </div>
           <div
             {...aosProps}
+            data-aos-delay="400"
             className="mt-8 text-xl text-black text-center w-full"
           >
-            <div className="font-bold text-lg">CONTACT</div>
-            <p className="text-large text-gray-700 mt-2">Harry & Franko</p>
+            <div className="text-base">If You want to Join Us</div>
+            <div className="font-bold text-lg text-blue-500">
+              <a href="https://forms.gle/SL5qxPZmjRBFctdY9">
+                Please submit this form
+              </a>
+            </div>
           </div>
         </div>
         <div className="mb-20"></div>
