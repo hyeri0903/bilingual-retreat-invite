@@ -50,7 +50,6 @@ export default function Content () {
           </div>
           <div
             {...aosProps}
-            data-aos-delay="400"
             className="mt-8 text-xl text-black text-center w-full"
           >
             <div className="text-base">If you’d like to join the Bilingual Retreat</div>
