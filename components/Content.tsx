@@ -41,7 +41,7 @@ export default function Content () {
             className="mt-8 text-xl text-black text-center w-full"
           >
             <div className="font-bold text-lg">WHERE</div>
-            <div className="text-gray-700 mt-2">
+            <div className="text-gray-700 mt-2 text-lg">
               <div>
                 강남대로 101길 20 4층 (신사역 5번 출구)
               </div>
@@ -53,9 +53,9 @@ export default function Content () {
             data-aos-delay="400"
             className="mt-8 text-xl text-black text-center w-full"
           >
-            <div className="text-base">If You want to Join Us</div>
-            <div className="font-bold text-lg text-blue-500">
-              <a href="https://forms.gle/SL5qxPZmjRBFctdY9">
+            <div className="text-base">If you’d like to join the Bilingual Retreat</div>
+            <div className="font-bold text-lg text-blue-500 underline cursor-pointer">
+              <a href="https://forms.gle/SL5qxPZmjRBFctdY9" target="_blank" rel="noopener noreferrer">
                 Please submit this form
               </a>
             </div>
