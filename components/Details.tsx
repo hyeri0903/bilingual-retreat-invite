@@ -65,20 +65,21 @@ export default function Details() {
               </div>
 
               <div className="flex justify-center mt-5">
-                <motion.button
+                {/* <motion.button
                   whileHover={{ scale: 1.05 }}
                   className="bg-gray-200 hover:bg-yellow-500 text-black font-bold py-3 px-8 text-lg rounded-lg"
                   onClick={kakaoBankAlert}
                 >
                   Wire to KakaoBank
-                  {/* <a
+                   <a
                     href={kakaoBankUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Wire to KakaoBank
-                  </a> */}
-                </motion.button>
+                  </a> 
+                </motion.button> 
+                */}
               </div>
             </div>
           </div>
