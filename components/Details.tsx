@@ -53,9 +53,7 @@ export default function Details() {
           <div>
             <div className="space-y-1 text-gray-700 text-center md:text-left">
               <div className="text-gray-700 text-center mb-6">
-                We're asking for 40,000 won contribution&nbsp;
-                <span className="sm:hidden"><br /></span>
-                for the Bilingual Retreat!
+                It’s 40,000 won to join the Bilingual Retreat!
                 <div
                   className="text-gray-700 text-center mt-5 underline cursor-pointer"
                   onClick={() => copyToClipboard("3333343640786")}
